@@ -25,6 +25,19 @@
            		 "default": null    
              }
           }
+      },
+      {
+       "name": "rolls",
+        "type": 
+        {
+            "type": "array",
+            "items":
+            {
+                 "name": "rollnumber",
+                 "type": "int",
+           		 "default": -1    
+             }
+          }
       }
   ]
 }

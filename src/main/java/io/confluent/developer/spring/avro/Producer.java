@@ -26,7 +26,7 @@ public class Producer {
 
   void sendMessage(User user) {
 	  System.out.println(user);
-    this.kafkaTemplate.send("newlistusers", user.getName(), user);
+    this.kafkaTemplate.send("newlistusersint", user.getName(), user);
 //    log.info(String.format("Produced user -> %s", user));
   }
 }

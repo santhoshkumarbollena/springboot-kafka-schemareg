@@ -25,6 +25,9 @@ public class KafkaController {
 	  ArrayList<String> ai=new ArrayList<>();
 	  ai.add("asda@g");
 	  ai.add("asdas@y");
-    this.producer.sendMessage(new User(name, age,ai));
+	  ArrayList<Integer> ai2=new ArrayList<>();
+	  ai2.add(77);
+	  ai2.add(99);
+    this.producer.sendMessage(new User(name, age,ai,ai2));
   }
 }
