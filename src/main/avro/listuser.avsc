@@ -1,0 +1,42 @@
+{
+    "type": "record",
+    "namespace": "io.confluent.developer",
+    "name": "AccountEvent",
+    "fields": [
+        {
+            "name": "accountNumber",
+            "type": "string",
+            "avro.java.string": "String",
+            "default": null
+        },
+        {
+            "name": "address",
+            "type": "string",
+            "avro.java.string": "String",
+            "default": null
+        },
+        {
+            "name": "accountList",
+            "type": {
+                "type": "array",
+                "items":{
+                    "name": "Account",
+                    "type": "record",
+           			 "default": null,
+                    "fields":[
+                        {   "name": "accountNumber",
+                            "type": "string",
+                            "avro.java.string": "String",
+            				"default": null
+                        },
+                        {   "name": "id",
+                            "type": "string",
+                            "avro.java.string": "String",
+          				    "default": null
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

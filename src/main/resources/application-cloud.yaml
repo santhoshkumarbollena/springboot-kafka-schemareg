@@ -1,0 +1,15 @@
+topic:
+  name: listusers
+  partitions-num: 1
+  replication-factor: 1
+server:
+  port: 9080
+spring:
+  kafka:
+    bootstrap-servers:
+      - mybootstrap.confluent.cloud:9092  # <1>
+    properties:
+      
+logging:
+  level:
+    root: info
